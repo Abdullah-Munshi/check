@@ -88,7 +88,6 @@ ol {
   padding-left: 10px;
 }
 .language-select .form-select {
-  background-color: transparent;
   border: 0;
   color: var(--white);
   font-family: "Lato", sans-serif;
@@ -96,6 +95,7 @@ ol {
   font-weight: 700;
   padding-right: 25px;
   cursor: pointer;
+  background-color: #7e7e7e;
 }
 .form-select:focus {
   -webkit-box-shadow: none;

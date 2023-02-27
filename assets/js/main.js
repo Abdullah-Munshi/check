@@ -10,7 +10,7 @@ primary.insertAdjacentHTML(
   "beforeend",
   `<li class="amore">
     <button type="button" aria-haspopup="true" aria-expanded="false">
-    More<span class="d-inline ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+    Otros<span class="d-inline ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
     <path id="Polygon_1" data-name="Polygon 1" d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)" fill="#fff"/>
   </svg>
   </span>
