@@ -138,6 +138,9 @@
   .writer-form {
     grid-template-columns: 1fr;
   }
+  .single-result .sinopsis p {
+    column-count: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -402,6 +405,14 @@
   .sm-menu-top-blk .language-select {
     height: 36px;
     margin-left: 7px;
+  }
+  .single-result {
+    grid-template-columns: 1fr;
+  }
+  .pagination li a {
+    width: 28px;
+    height: 25px;
+    font-size: 14px;
   }
 }
 
