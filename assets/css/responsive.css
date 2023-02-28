@@ -414,6 +414,9 @@
     height: 25px;
     font-size: 14px;
   }
+  .section-title.type-2 {
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (max-width: 479px) {

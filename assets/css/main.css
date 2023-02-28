@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* base css start */
 :root {
   --dark-gray: #2c2c2c;
@@ -672,7 +665,7 @@ textarea.form-control {
 .share-wrapper h4 {
   font-size: 19px;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .tp h3 {
   font-size: 18px;
@@ -1170,3 +1163,47 @@ textarea.form-control {
   margin-right: 12px;
 }
 /* search-result page css end */
+
+/* free page css start */
+.free-cruds a img {
+  width: 30px;
+  height: 30px;
+}
+.free-cruds a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.free-cruds-2 a {
+  margin: 5px;
+  height: 38px;
+  line-height: 33px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.free-cruds-2 a img {
+  transform: translateY(-1px) !important;
+  max-height: 25px;
+}
+.free-cruds-2.type-2 a {
+  border: 1px solid #b4b4b4;
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+}
+.free-cruds-2.type-2 a:hover {
+  border-color: #000;
+}
+.free-instructions.para-content-wrapper {
+  border: 1px solid #b4b4b4;
+  padding: 15px 20px;
+}
+.details-g-wrapper.free {
+  padding-bottom: 36px;
+}
+.details-g-wrapper.free + div.border-btttom-1-dashed {
+  padding-bottom: 70px;
+}
+.section-title.type-2 {
+  margin-bottom: 40px;
+}
+/* free page css end */
