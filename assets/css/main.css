@@ -45,7 +45,7 @@ ol {
 
 /* header css start */
 .header-area {
-  padding: 16px 0;
+  padding: 24px 0;
 }
 .header-right {
   -webkit-box-flex: 1;
@@ -89,6 +89,8 @@ ol {
   padding-right: 25px;
   cursor: pointer;
   background-color: #7e7e7e;
+  background-image: url("../img/triangle-down.png");
+  background-size: 12px 8px;
 }
 .form-select:focus {
   -webkit-box-shadow: none;
@@ -176,9 +178,20 @@ ol {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  transition: 0.3s;
 }
 .btn.free-book {
-  padding-left: 44px;
+  padding-left: 42px;
+  padding-right: 10px;
+  min-width: 158.8px;
+  transition: 0.3s;
+}
+#serviceType[data-status="buybook"] {
+  padding-right: 42px;
+  padding-left: 10px;
+}
+#serviceType[data-status="buybook"] span.round-shadow {
+  left: calc(100% - 35px);
 }
 header .btn {
   padding: 0 12px;
@@ -334,7 +347,7 @@ header .btn {
   text-decoration: none;
   font-size: 16px;
   display: inline-block;
-  padding: 9px 0;
+  padding: 8px 0;
   white-space: nowrap;
   line-height: 1.2;
   -webkit-transition: 0.3s;
@@ -350,7 +363,10 @@ header .btn {
   display: flex;
 }
 .main_nav .-primary li:not(:last-child) a {
-  margin-right: 34px;
+  margin-left: 34px;
+}
+.main_nav ul li:first-child a {
+  margin-left: 0 !important;
 }
 .main_nav .-primary .amore > button span {
   display: inline-block;
@@ -437,7 +453,8 @@ header .btn {
     transform: translateY(0);
   }
 }
-.main_nav ul li:not(:last-child)::after {
+.main_nav ul li:not(:first-child)::after,
+.main_nav .-primary li.amore:after {
   content: "";
   height: 18px;
   width: 1px;
@@ -447,7 +464,16 @@ header .btn {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 14px;
+  left: 14px;
+}
+.main_nav .-primary li.amore {
+  position: relative;
+}
+.main_nav .-primary li.amore button {
+  margin-left: 24px;
+}
+.main_nav .-primary li.amore::after {
+  left: 12px;
 }
 .main_nav .asecondary li a {
   margin: 0 !important;

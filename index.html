@@ -66,10 +66,12 @@
               <a
                 href="#"
                 class="btn free-book f_lato f_lato_bold border-50 position-relative"
+                data-status="freebook"
+                id="serviceType"
                 ><span
                   class="round-shadow d-inline-block position-absolute"
                 ></span
-                >Ver Libros Gratis</a
+                ><span class="txt">Ver Libros Gratis</span></a
               >
               <a
                 href="#"
@@ -151,6 +153,7 @@
             <div class="language-select d-none d-lg-flex align-items-center">
               <img src="assets/img/globe.svg" alt="" class="globe" />
               <select name="language" id="language" class="form-select">
+                <option value="" selected>Seleccione Idioma</option>
                 <option value="">Spanish</option>
                 <option value="">English</option>
               </select>
@@ -162,7 +165,7 @@
               <a href="#" class="f_lato f_lato_bold d-inline-block">Síguenos</a>
               <ul class="social-link d-flex align-items-center">
                 <li class="d-block">
-                  <a href="#" class="d-inline-block"
+                  <a href="#" target="_blank" class="d-inline-block"
                     ><img
                       class="img-fluid"
                       src="assets/img/facebook.svg"
@@ -170,7 +173,7 @@
                   /></a>
                 </li>
                 <li class="d-block">
-                  <a href="#" class="d-inline-block"
+                  <a href="#" target="_blank" class="d-inline-block"
                     ><img
                       class="img-fluid"
                       src="assets/img/instagram.svg"
@@ -383,12 +386,6 @@
             </li>
             <li class="position-relative">
               <a class="d-inline-block" href="#">Artículos</a>
-            </li>
-            <li class="position-relative">
-              <a class="d-inline-block" href="#">extra item</a>
-            </li>
-            <li class="position-relative">
-              <a class="d-inline-block" href="#">extra item</a>
             </li>
           </ul>
         </nav>

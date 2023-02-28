@@ -1,4 +1,21 @@
 //////////////////////////////////////////////////////
+// SCRIPT FOR TOGGLE SWITCH IN HEADER FREE BOOKS/BUY BOOKS
+if (document.getElementById("serviceType") !== null) {
+  const serviceType = document.getElementById("serviceType");
+  serviceType.addEventListener("click", function (event) {
+    event.preventDefault();
+    const toggleTextEl = this.querySelector(".txt");
+    if (this.dataset.status == "freebook") {
+      this.dataset.status = "buybook";
+      toggleTextEl.innerText = "Comprar Libros";
+    } else {
+      this.dataset.status = "freebook";
+      toggleTextEl.innerText = "Ver Libros Gratis";
+    }
+  });
+}
+
+//////////////////////////////////////////////////////
 // SCRIPT FOR NAVIGATION ADAPTATION WHEN MENU ITEMS WIDTH EXCEEDS THE WIDTH OF CONTAINER IT WILL GO UNDER DROPDOWN
 const container = document.querySelector(".main_nav");
 const primary = container.querySelector(".-primary");
@@ -71,20 +88,14 @@ const doAdapt = () => {
 
 doAdapt(); // adapt immediately on load
 window.addEventListener("resize", doAdapt); // adapt on window resize
+window.addEventListener("load", doAdapt); // adapt on window resize
 
 // hide Secondary on the outside click
-document.addEventListener("click", (e) => {
-  let el = e.target;
-  while (el) {
-    if (window.CP.shouldStopExecution(0)) break;
-    if (el === secondary || el === moreBtn) {
-      return;
-    }
-    el = el.parentNode;
+document.addEventListener("click", function (event) {
+  if (!moreLi.contains(event.target)) {
+    container.classList.remove("aashow-secondary");
+    moreBtn.setAttribute("aria-expanded", false);
   }
-  window.CP.exitedLoop(0);
-  container.classList.remove("aashow-secondary");
-  moreBtn.setAttribute("aria-expanded", false);
 });
 
 ///////////////////////////////////////////////////////////////////////////
