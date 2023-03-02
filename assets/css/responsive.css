@@ -167,7 +167,7 @@
     padding: 50px 0;
   }
   .related-post-g-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: calc(33.333% - 13.333px) calc(33.333% - 13.333px) calc(33.333% - 13.333px);
   }
   .w-r-g-wrap {
     display: flex;
@@ -342,6 +342,7 @@
   .search button {
     width: 34px;
     height: 34px;
+    padding: 9px;
   }
   .cmn-area {
     padding-top: 15px;
@@ -406,7 +407,7 @@
     margin-right: 15px;
   }
   .related-post-g-wrapper {
-    grid-template-columns: 1fr 1fr;
+      grid-template-columns: calc(50% - 8px) calc(50% - 8px);
     grid-column-gap: 16px;
   }
   .related-post-area {
@@ -469,7 +470,6 @@
     grid-template-columns: 1fr;
     padding-left: 2rem;
     padding-right: 2rem;
-    max-width: 480px;
   }
   .pagination li a {
     width: 28px;

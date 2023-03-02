@@ -785,12 +785,10 @@ textarea.form-control {
   transform: translateY(-3px);
 }
 .related-post-g-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-row-gap: 44px;
+	display: grid;
+	grid-template-columns: calc(20% - 16px) calc(20% - 16px) calc(20% - 16px) calc(20% - 16px) calc(20% - 16px);
+	grid-gap: 20px;
+	grid-row-gap: 44px;
 }
 .product-content h4 {
   font-size: 16px;
