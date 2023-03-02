@@ -1,3 +1,17 @@
+@media screen and (max-width: 1465px) {
+  .product-rw-slider .splide__arrow--next {
+    right: 5px;
+  }
+  .product-rw-slider .splide__arrow--prev {
+    left: 5px;
+  }
+  .product-rw-slider .splide__arrow {
+    background-color: var(--dark-gray);
+  }
+  .product-rw-slider .splide__arrow svg path {
+    fill: #fff;
+  }
+}
 @media screen and (max-width: 1439px) {
   .details-g-wrapper {
     grid-template-columns: 1.1fr 1.4fr 1.2fr;

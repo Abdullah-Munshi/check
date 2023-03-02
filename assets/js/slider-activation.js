@@ -1,16 +1,23 @@
 // Activation for slider
 let sliderConfig = {
-  perPage: 4,
+  perPage: 5,
   gap: 24,
   arrows: false,
   drag: false,
   pagination: false,
+  padding: { left: 15, right: 15 },
   breakpoints: {
+    1024: {
+      drag: true,
+      perPage: 4,
+      arrows: true,
+    },
     768: {
       perPage: 3,
     },
     575: {
       perPage: 1,
+      arrows: false,
       padding: { right: 80 },
     },
   },
@@ -19,12 +26,14 @@ let sliderConfig = {
 let sliderConfigTwo = {
   perPage: 7,
   gap: 24,
-  arrows: false,
   drag: false,
   pagination: false,
+  padding: { left: 15, right: 15 },
   breakpoints: {
     1200: {
       perPage: 5,
+      arrows: true,
+      drag: true,
     },
     992: {
       perPage: 4,
@@ -35,6 +44,7 @@ let sliderConfigTwo = {
     },
     575: {
       perPage: 1,
+      arrows: false,
       padding: { right: 80 },
     },
   },
