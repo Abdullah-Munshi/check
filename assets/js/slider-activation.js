@@ -49,6 +49,7 @@ let sliderConfigTwo = {
     },
   },
 };
+new Splide(".slider_0", sliderConfig).mount();
 new Splide(".slider_1", sliderConfig).mount();
 new Splide(".slider_2", sliderConfigTwo).mount();
 new Splide(".slider_3", sliderConfigTwo).mount();

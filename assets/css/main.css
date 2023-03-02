@@ -302,6 +302,9 @@ header .btn {
 .sm-menu-links li {
   border-bottom: 1px solid #707070;
 }
+.sm-menu-links li:first-child {
+	border-top: 1px solid #707070;
+}
 .language-select {
   margin-left: 10px;
 }
@@ -324,6 +327,9 @@ header .btn {
 }
 .sm-menu-top-blk .access-wrap {
   margin-left: 10px !important;
+}
+.sm-menu-top-blk .access-wrap::after {
+	content: none;
 }
 /* sm-menu css end */
 /* header css end */
@@ -794,8 +800,9 @@ textarea.form-control {
   white-space: nowrap;
 }
 .product-content h4 a {
-  color: var(--black);
-  text-decoration: none;
+	color: var(--black);
+	text-decoration: none;
+	max-width: 100%;
 }
 
 .share li a {
@@ -1054,14 +1061,6 @@ textarea.form-control {
 /* cart-bag page css end */
 
 /* index page css start */
-
-.recomened-blk-g-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 24px 2.5fr;
-  grid-template-columns: 1fr 2.5fr;
-  grid-gap: 24px;
-}
 .recomened-product-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1132,9 +1131,6 @@ textarea.form-control {
 .badge-added {
   position: relative;
   padding-top: 38px;
-}
-.recomended-blk-area {
-  padding-bottom: 20px;
 }
 /* index page css end */
 
