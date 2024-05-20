@@ -229,7 +229,8 @@ body {
   border-radius: 13px;
 }
 .custom-input,
-.select-el .min-w-\[200px\] .peer {
+.select-el .min-w-\[200px\] .peer,
+.flag-dropdown {
   appearance: none;
   background-clip: padding-box;
   background-color: #222;
@@ -245,6 +246,13 @@ body {
   padding: 0 16px;
   outline: none;
   transition: 0.3s;
+}
+.flag-dropdown {
+  background-color: #222;
+  border: 1px solid #4e3002;
+  border-radius: 4px;
+  height: 36px;
+  pointer-events: none;
 }
 .input-inside > label,
 .label-p {
