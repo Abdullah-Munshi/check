@@ -112,7 +112,7 @@ const SelectCard = () => {
                     <div className="input-inside">
                       <label htmlFor="">Prefix</label>
                       <div className="select-el">
-                        <Select>
+                        <Select label="Prefix">
                           <Option>Mr.</Option>
                           <Option>Ms.</Option>
                           <Option>Mrs.</Option>
@@ -181,34 +181,36 @@ const SelectCard = () => {
                   <div className="grid grid-cols-2 gap-7">
                     <div className="input-inside">
                       <label htmlFor="">Phone</label>
-                      <div>
-                        <Select
-                          size="lg"
-                          label="Select Country"
-                          selected={(element) =>
-                            element &&
-                            React.cloneElement(element, {
-                              disabled: true,
-                              className:
-                                "flex items-center opacity-100 px-0 gap-2 pointer-events-none",
-                            })
-                          }
-                        >
-                          {countries.map(({ name, flags }) => (
-                            <Option
-                              key={name}
-                              value={name}
-                              className="flex items-center gap-2"
-                            >
-                              <img
-                                src={flags.svg}
-                                alt={name}
-                                className="h-5 w-5 rounded-full object-cover"
-                              />
-                              {name}
-                            </Option>
-                          ))}
-                        </Select>
+                      <div className="grid grid-cols-[100px_auto]">
+                        <div className="select-el">
+                          <Select
+                            label=""
+                            selected={(element) =>
+                              element &&
+                              React.cloneElement(element, {
+                                disabled: true,
+                                className:
+                                  "flex items-center opacity-100 px-0 gap-2 pointer-events-none",
+                              })
+                            }
+                          >
+                            {countries.map(({ name, flags }) => (
+                              <Option
+                                key={name}
+                                value={name}
+                                className="flex items-center gap-2"
+                              >
+                                <img
+                                  src={flags.svg}
+                                  alt={name}
+                                  className="h-5 w-5 rounded-full object-cover"
+                                />
+                                {name}
+                              </Option>
+                            ))}
+                          </Select>
+                        </div>
+                        <input type="text" className="custom-input" />
                       </div>
                     </div>
                     <div className="input-inside">
@@ -307,12 +309,62 @@ const SelectCard = () => {
                         src="https://res.cloudinary.com/cardscanner/image/upload/v1684309312/wgu1uyyzwjh7krg6oo4z.png"
                         alt="icon"
                       />
+                      <div className="social-link-overlay">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="45"
+                          height="44"
+                          viewBox="0 0 45 44"
+                          fill="none"
+                        >
+                          <rect
+                            x="1"
+                            y="1"
+                            width="43"
+                            height="42"
+                            rx="12"
+                            fill="#FFC832"
+                            fillOpacity="0.29"
+                            stroke="#F6CD66"
+                            strokeWidth="2"
+                          ></rect>
+                          <path
+                            d="M19.9074 29.8167L12 21.9074L14.6352 19.2722L19.9074 24.5426L30.4481 14L33.0852 16.637L19.9074 29.813V29.8167Z"
+                            fill="#1F7D00"
+                          ></path>
+                        </svg>
+                      </div>
                     </button>
                     <button className="social-links">
                       <img
                         src="https://res.cloudinary.com/cardscanner/image/upload/v1684309312/yseji32pybmfcygiqhes.png"
                         alt="icon"
                       />
+                      <div className="social-link-overlay">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="45"
+                          height="44"
+                          viewBox="0 0 45 44"
+                          fill="none"
+                        >
+                          <rect
+                            x="1"
+                            y="1"
+                            width="43"
+                            height="42"
+                            rx="12"
+                            fill="#FFC832"
+                            fillOpacity="0.29"
+                            stroke="#F6CD66"
+                            strokeWidth="2"
+                          ></rect>
+                          <path
+                            d="M19.9074 29.8167L12 21.9074L14.6352 19.2722L19.9074 24.5426L30.4481 14L33.0852 16.637L19.9074 29.813V29.8167Z"
+                            fill="#1F7D00"
+                          ></path>
+                        </svg>
+                      </div>
                     </button>
                     <button className="social-links">
                       <img
@@ -490,17 +542,29 @@ const SelectCard = () => {
                 </div>
               </div>
             </div>
-            <StickyBox offsetTop={200} offsetBottom={20}>
+            <StickyBox offsetTop={150} offsetBottom={20}>
               <div className="w-[360px] ">
                 <div className="twin-buttons flex justify-end space-x-[22px] mb-9">
-                  <button className="box-btn">Cancel</button>
-                  <button className="box-btn">Save</button>
+                  <button className="box-btn-2 style-2">
+                    <div className="w-full h-full rounded-lg flex items-center justify-center">
+                      Cancel
+                    </div>
+                  </button>
+                  <button className="box-btn-2 style-3">
+                    {" "}
+                    <div className="w-full h-full rounded-lg flex items-center justify-center">
+                      Save
+                    </div>
+                  </button>
                 </div>
                 <div className="border-l border-[#e5e7eb]">
                   <div className="implemented-card w-[280px] ml-auto text-white">
                     <h1>Card</h1>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                     rerum vitae nesciunt porro, ratione veniam.
+                    <h1 className="text-center text-2xl text-white mt-10">
+                      Under Development...
+                    </h1>
                   </div>
                 </div>
               </div>

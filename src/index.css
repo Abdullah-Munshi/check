@@ -246,7 +246,7 @@ body {
   outline: none;
   transition: 0.3s;
 }
-.input-inside label,
+.input-inside > label,
 .label-p {
   display: block;
   color: #f6cd66;
@@ -274,10 +274,20 @@ textarea.custom-input {
   height: 23px;
   padding: 0 7px;
 }
-
 .social-links {
   width: 45px;
   height: 45px;
+  position: relative;
+  display: block;
+}
+.social-link-overlay svg {
+  width: 45px;
+}
+.social-link-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .social-links img {
   max-width: 100%;
@@ -291,5 +301,34 @@ textarea.custom-input {
   border-radius: 4px;
   height: 34px;
   justify-content: space-between;
+}
+.box-btn-2 {
+  background: linear-gradient(92deg, #fd5, #fbd853, #b27c27, #fddb54, #b27c27);
+  border-radius: 8px;
+  height: 49px;
+  padding: 2px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.box-btn-2 div {
+  background-color: #222;
+  color: #f7ad27;
+}
+.box-btn-2.style-3 div {
+  background: linear-gradient(
+    92deg,
+    #d38800 5.78%,
+    #d48800 17.09%,
+    #feb42e 41.12%,
+    #fcb12b 57.14%,
+    #dd9411 77.87%,
+    #ffb52f 96.25%
+  );
+  color: #4d3000;
+}
+.select-el label {
+  color: #f6cd66;
+  font-size: 13px;
 }
 /* SelectedCard page css end */
