@@ -10,7 +10,7 @@ const Footer = () => {
             <img className="mx-auto my-[57px]" src={ftSign} alt="icon" />
           </div>
           <div className="branding-box rounded-[30px] relative overflow-hidden">
-            <div class="styles_row_your_card__LauG9">
+            <div className="styles_row_your_card__LauG9">
               <h1>Elevate your Brand</h1>
               <p>With Card Connect</p>
               <a className="box-btn" href="/select-card">
@@ -24,10 +24,10 @@ const Footer = () => {
             <a href="#" className="inline-block">
               <img className="w-[180px] block" src={logo} alt="logo" />
             </a>
-            <p class="styles_tagLineText__ytNOD leading-tight -mt-[5px]">
+            <p className="styles_tagLineText__ytNOD leading-tight -mt-[5px]">
               Card connect connecting minds
             </p>
-            <p class="styles_footer_logo_text__FTFNz">
+            <p className="styles_footer_logo_text__FTFNz">
               We value you. Stay connected with us for the latest <br /> update
               from Card Connect
             </p>
@@ -76,8 +76,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="styles_copyright__bLknF">
-          <div class="styles_copyright_text__U57Gd">
+        <div className="styles_copyright__bLknF">
+          <div className="styles_copyright_text__U57Gd">
             Copyright © 2023 Card Connect
           </div>
           <div>
