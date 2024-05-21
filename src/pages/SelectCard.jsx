@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import StickyBox from "react-sticky-box";
-// import { useCountries } from "use-react-countries";
-// import { Option, Select } from "@material-tailwind/react";
 import { Select } from "@headlessui/react";
 import clsx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -14,9 +12,9 @@ import call from "../assets/call.svg";
 import users from "../assets/user-icon.svg";
 import CardCarousel from "../components/CardCarousel";
 import { PlusIcon, MinusIcon } from "@heroicons/react/16/solid";
+import CardOne from "../components/CardOne";
 
 const SelectCard = () => {
-  // const { countries } = useCountries();
   const [flag, setFlag] = useState("IN");
   const handleFlag = (el) => {
     setFlag(el.target.value);
@@ -29,11 +27,8 @@ const SelectCard = () => {
 
       <div className="page-self">
         <div className="container">
-          <div
-            className="selectCard-page"
-            style={{ display: "flex", alignItems: "flex-start" }}
-          >
-            <div className="lf flex-1 w-[calc(100%-360px)]">
+          <div className="selectCard-page lg:flex items-start">
+            <div className="lf flex-1 lg:w-[calc(100%-360px)]">
               <div className="page-header mb-10">
                 <nav
                   aria-label="breadcrumb"
@@ -202,9 +197,9 @@ const SelectCard = () => {
                       <label htmlFor="">Phone</label>
                       <div className="grid grid-cols-[100px_auto]">
                         <div className="relative">
-                          <div className="flag-dropdown cursor-pointer !flex items-center justify-between cursor-pointer">
+                          <div className="flag-dropdown !flex items-center justify-between cursor-pointer">
                             <img
-                              class="w-5 block"
+                              className="w-5 block"
                               alt="India"
                               src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${flag}.svg`}
                             />
@@ -828,7 +823,11 @@ const SelectCard = () => {
                 </div>
               </div>
             </div>
-            <StickyBox offsetTop={150} offsetBottom={20}>
+            <StickyBox
+              className="hidden lg:block"
+              offsetTop={150}
+              offsetBottom={20}
+            >
               <div className="w-[360px] ">
                 <div className="twin-buttons flex justify-end space-x-[22px] mb-9">
                   <button className="box-btn-2 style-2">
@@ -845,12 +844,7 @@ const SelectCard = () => {
                 </div>
                 <div className="border-l border-[#e5e7eb]">
                   <div className="implemented-card w-[280px] ml-auto text-white">
-                    <h1>Card</h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                    rerum vitae nesciunt porro, ratione veniam.
-                    <h1 className="text-center text-2xl text-white mt-10">
-                      Under Development...
-                    </h1>
+                    <CardOne />
                   </div>
                 </div>
               </div>

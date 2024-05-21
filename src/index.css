@@ -339,4 +339,47 @@ textarea.custom-input {
   color: #f6cd66;
   font-size: 13px;
 }
+.cover-photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+.ct-list-card li a {
+  color: #1877db;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.save-card {
+  background: linear-gradient(
+    184deg,
+    #ffb94e -21.96%,
+    #c38629 36.87%,
+    #d68100 70.17%,
+    #febd5a 97.14%,
+    #ffd79a 115.79%
+  );
+  border: 2px solid hsla(0, 0%, 100%, 0.4);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+  height: 45px;
+}
 /* SelectedCard page css end */
+
+/* Media Query */
+@media screen and (max-width: 959px) {
+  .selectCard-page .lf {
+    padding-right: 0;
+  }
+  .main-menu li {
+    height: 40px;
+    margin: 0 26px;
+    justify-content: flex-start;
+  }
+}
