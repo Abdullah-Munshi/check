@@ -223,7 +223,6 @@ body {
   padding-right: 56px;
 }
 .data-selected {
-  background-color: rgba(0, 0, 0, 0.2);
   background: rgba(255, 200, 50, 0.29);
   border: 2px solid #f6cd66;
   border-radius: 13px;
@@ -428,6 +427,38 @@ textarea.custom-input {
   width: 19px;
   height: 19px;
   margin-right: 4px;
+}
+.slick-prev,
+.slick-next {
+  z-index: 10 !important;
+  background: linear-gradient(
+    92deg,
+    #d38800 5.78%,
+    #d48800 17.09%,
+    #feb42e 41.12%,
+    #fcb12b 57.14%,
+    #dd9411 77.87%,
+    #ffb52f 96.25%
+  ) !important;
+  border: 2px solid #fd5 !important;
+  border-radius: 25px;
+  box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.18);
+  height: 30px !important;
+  width: 30px !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+}
+.slick-prev {
+  left: 0 !important;
+}
+.slick-next {
+  right: 0 !important;
+}
+.slick-list {
+  margin-left: -10px !important;
+  margin-right: -10px !important;
 }
 /* SelectedCard page css end */
 

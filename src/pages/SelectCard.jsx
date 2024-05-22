@@ -116,7 +116,7 @@ const SelectCard = () => {
                       </span>
                     </label>
                   </div>
-                  <div className="grid grid-cols-[115px_1fr_1fr_115px] gap-7">
+                  <div className="grid grid-cols-1 gap-5 md:grid-cols-[115px_1fr_1fr_115px] md:gap-7">
                     <div className="input-inside">
                       <label htmlFor="">Prefix</label>
                       <div className="relative">
@@ -163,7 +163,7 @@ const SelectCard = () => {
                       Work Details
                     </span>
                   </h5>
-                  <div className="grid grid-cols-2 gap-7">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7">
                     <div className="input-inside">
                       <label htmlFor="">Designation</label>
                       <input type="text" className="custom-input" />
@@ -196,7 +196,7 @@ const SelectCard = () => {
                       Contact Details
                     </span>
                   </h5>
-                  <div className="grid grid-cols-2 gap-7">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7">
                     <div className="input-inside">
                       <label htmlFor="">Phone</label>
                       <div className="grid grid-cols-[100px_auto]">
@@ -503,7 +503,7 @@ const SelectCard = () => {
                       <input type="text" className="custom-input" />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-7">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
                     <div className="input-inside">
                       <label htmlFor="website">Website</label>
                       <input
