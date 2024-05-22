@@ -14,6 +14,9 @@ import CardCarousel from "../components/CardCarousel";
 import { PlusIcon, MinusIcon } from "@heroicons/react/16/solid";
 import CardOne from "../components/CardOne";
 import CardTwo from "../components/CardTwo";
+import CardThree from "../components/CardThree";
+import CardFour from "../components/CardFour";
+import CardFive from "../components/CardFive";
 
 const SelectCard = () => {
   const [flag, setFlag] = useState("IN");
@@ -845,7 +848,7 @@ const SelectCard = () => {
                 </div>
                 <div className="border-l border-[#e5e7eb]">
                   <div className="implemented-card w-[280px] ml-auto text-white">
-                    <CardTwo />
+                    <CardFive />
                   </div>
                 </div>
               </div>

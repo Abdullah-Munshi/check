@@ -37,7 +37,7 @@ const CardTwo = () => {
             alt="avaater"
           />
         </div>
-        <div className="grid grid-cols-[auto_25px] gap-3 px-[18px] pt-16">
+        <div className="grid grid-cols-[auto_70px] gap-3 px-[18px] pt-16">
           <div>
             <h5 className="text-[#404040] font-bold text-[15px] leading-tight mb-[1px]">
               Mr. Abdullah Munshi Munshi
