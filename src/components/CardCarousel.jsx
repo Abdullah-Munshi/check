@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import card1 from "../assets/card-1.png";
 import card2 from "../assets/card-2.png";
 import card3 from "../assets/card-3.png";
@@ -13,9 +13,11 @@ import { DataSelected } from "./Utility";
 register();
 
 const CardCarousel = () => {
+  const swiperElRef = useRef(null);
   return (
     <div>
       <swiper-container
+        ref={swiperElRef}
         slides-per-view="4"
         space-between="20"
         mousewheel-force-to-axis="true"

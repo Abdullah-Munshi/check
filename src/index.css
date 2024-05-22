@@ -370,6 +370,65 @@ textarea.custom-input {
   box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
   height: 45px;
 }
+.save-card.bg-white {
+  background: #fff;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.07);
+}
+.styles_TruncateItemCount__jGiyw {
+  background: #e5eeff;
+  border-radius: 20px;
+  padding: 3px 8px;
+}
+.styles_TruncateSocialItem__PpzL5 {
+  -webkit-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.239));
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2392156863));
+  height: 20px;
+  margin-left: -10px;
+  position: relative;
+  width: 20px;
+}
+.styles_TruncateSocialItem__PpzL5 img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.styles_DropdownItemContainer__-RA5C {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  max-height: 250px;
+  overflow: auto;
+  padding: 5px;
+  width: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.styles_DropdownItemContainer__-RA5C .styles_DropdownItem__JQAsG {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  padding: 6px 8px;
+  width: 100%;
+}
+.styles_DropdownItemContainer__-RA5C
+  .styles_DropdownItem__JQAsG:not(:last-child) {
+  margin-bottom: 4px;
+}
+.styles_DropdownItemContainer__-RA5C .styles_DropdownItem__JQAsG p {
+  color: #555;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.styles_Logo__sQgAR {
+  width: 19px;
+  height: 19px;
+  margin-right: 4px;
+}
 /* SelectedCard page css end */
 
 /* Media Query */
