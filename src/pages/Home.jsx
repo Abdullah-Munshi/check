@@ -12,23 +12,36 @@ import trans1 from "../assets/home-trans-1.svg";
 import trans2 from "../assets/home-trans-2.svg";
 import trans3 from "../assets/home-trans-3.svg";
 import btnTrans from "../assets/button-trans.svg";
+import rect from "../assets/rect-1.svg";
+import f1 from "../assets/f-1.svg";
+import f2 from "../assets/f-2.svg";
+import f3 from "../assets/f-3.svg";
+import f4 from "../assets/f-4.svg";
+import qc1 from "../assets/qc-1.png";
+import qc2 from "../assets/qc-2.png";
 import Footer from "../layout/Footer";
+import HeaderBefore from "../layout/HeaderBefore";
 
 const Home = () => {
   return (
     <>
+      <HeaderBefore />
       <div
-        className="hero-area relative h-[730px] flex items-center bg-cover bg-center overflow-hidden"
+        className="hero-area relative h-[450px] md:h-[730px] flex items-center bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <img className="absolute top-[28%] z-10" src={royalCircle} alt="img" />
+        <img
+          className="royal-circle absolute top-[28%] z-10"
+          src={royalCircle}
+          alt="img"
+        />
         <div className="container relative z-20 ">
-          <div class="styles_zeeqr_section__Ukmdt">
-            <div class="styles_col_home__6H2IT">
-              <div class="styles_col__t0VEX">
+          <div className="styles_zeeqr_section__Ukmdt mt-6 md:mt-0">
+            <div className="styles_col_home__6H2IT">
+              <div className="styles_col__t0VEX">
                 <img src={heroDOne} alt="" />
-                <div class="styles_text_content__7bjhW">
-                  <p class="styles_hero_section_p1__Tmy9o">
+                <div className="styles_text_content__7bjhW">
+                  <p className="styles_hero_section_p1__Tmy9o">
                     Elevate your Brand
                   </p>
                   <svg
@@ -37,26 +50,28 @@ const Home = () => {
                     height="17"
                     viewBox="0 0 138 17"
                     fill="none"
-                    class="styles_marginLeftAuto__uhakb"
+                    className="styles_marginLeftAuto__uhakb"
                   >
                     <path
                       d="M3.12792 14.2856C2.00604 11.7006 27.7289 7.91952 58.7252 5.5864C92.6213 3.03501 112.565 2.26471 134.979 3.08428"
                       stroke="#ECA436"
-                      stroke-width="5"
-                      stroke-linecap="round"
+                      strokeWidth="5"
+                      strokeLinecap="round"
                     ></path>
                   </svg>
                 </div>
-                <p class="styles_hero_section_p2__9AtzL">With Card Connect ®</p>
-                <p class="styles_tagLineText__ytNOD">
+                <p className="styles_hero_section_p2__9AtzL">
+                  With Card Connect ®
+                </p>
+                <p className="styles_tagLineText__ytNOD">
                   Card connect connecting minds
                 </p>
-                <a class="box-btn" href="/select-card">
+                <a className="box-btn" href="/select-card">
                   Start Now!
                 </a>
               </div>
-              <div class="styles_col__t0VEX">
-                <div class="styles_ourVideo__sw7zd"></div>
+              <div className="styles_col__t0VEX">
+                <div className="styles_ourVideo__sw7zd"></div>
               </div>
             </div>
           </div>
@@ -66,7 +81,7 @@ const Home = () => {
         className="whyus-area bg-repeat rounded-[20px]  -mt-5 relative z-10 bg-[rgb(21,21,21)]"
         style={{ backgroundImage: `url(${patternBg})` }}
       >
-        <div className="absolute left-1/2 -translate-x-1/2 -top-[15px] ">
+        <div className="absolute left-1/2 -translate-x-1/2 -top-[12px] sm:-top-[15px] ">
           <img className="w-[238px] block" src={royalEdge} alt="" />
         </div>
         <div className="container">
@@ -159,21 +174,126 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="cta-area relative ">
+      <div className="cta-area relative overflow-hidden">
         <div className="cta-overlay"></div>
         <div className="cta-overlay-back"></div>
         <div className="container relative z-10">
-          <div className="space-y-5 md:space-y-0 md:grid grid-cols-2 items-center min-h-[307px]">
+          <img src={rect} className="absolute rect-one" alt="" />
+          <img src={rect} className="absolute rect-two" alt="" />
+          <img src={rect} className="absolute rect-three" alt="" />
+          <div className="space-y-5 md:space-y-0 md:grid grid-cols-2 items-center min-h-[307px] mb-5 py-10 relative z-10">
             <div className="cta-content">
+              <img src={heroDOne} alt="" />
               <h2>Experience Elegance</h2>
               <p>That makes strong connections</p>
             </div>
-            <div class="align-center flex-column">
+            <div className="flex items-center flex-col justify-center text-center">
               <img src={btnTrans} alt="-" />
-              <a shref="/select-card" className="box-btn">
+              <a shref="/select-card" className="box-btn relux mx-auto my-4">
                 Get your Card
               </a>
               <img src={btnTrans} alt="-" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="feature-area">
+        <div className="container">
+          <div className="grid lg:grid-cols-4 md:gap-6 md:grid-cols-2 gap-10">
+            <div className="feature-card">
+              <div className="top">
+                <div className="fea-icon">
+                  <img src={f1} alt="" />
+                </div>
+                <h5>Instant Sharing</h5>
+              </div>
+              <p>
+                Digital card business cards can be easily shared by tapping them
+                against an digital card smartphone. This makes it easy for
+                potential clients, colleagues, or contacts to receive your
+                contact information without the need for manual data entry.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="top">
+                <div className="fea-icon">
+                  <img src={f2} alt="" />
+                </div>
+                <h5>Secure</h5>
+              </div>
+              <p>
+                The data stored on the digital card is encrypted. This can help
+                to protect the data from unauthorized access in case the card is
+                lost or stolen. We constantly make sure that the user’s
+                information is secure, and we never jeopardize the privacy of
+                the user’s information.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="top">
+                <div className="fea-icon">
+                  <img src={f3} alt="" />
+                </div>
+                <h5>Enhanced Engagement</h5>
+              </div>
+              <p>
+                An digital card can be programmed with additional information,
+                such as a link to your website, social media profiles, or a
+                promotional video. This can help to enhance engagement with your
+                brand and encourage potential clients to learn more about your
+                business.
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="top">
+                <div className="fea-icon">
+                  <img src={f4} alt="" />
+                </div>
+                <h5>Customize your own cards</h5>
+              </div>
+              <p>
+                An digital card can be programmed with additional information,
+                such as a link to your website, social media profiles, or a
+                promotional video. This can help to enhance engagement with your
+                brand and encourage potential clients to learn more about your
+                business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="twin-area">
+        <div className="container">
+          <div className="twin-grid md:grid grid-cols-[470px_auto] gap-6 items-center mb-16">
+            <div className="whyus-content plc-2">
+              <h4>Our Collections</h4>
+              <p>
+                Card Connect always delivers not just a card but a stylish and
+                customizable solution which would be the game changer in
+                marketing.
+              </p>
+            </div>
+            <div className="qc-img">
+              <img src={qc1} alt="" />
+            </div>
+          </div>
+          <div className="twin-grid md:grid grid-cols-[470px_auto] gap-6 items-center">
+            <div className="whyus-content plc-2">
+              <h4>Our Mission</h4>
+              <p>
+                Our mission is to empower individuals and businesses with
+                innovative technology solutions that simplify and enhance their
+                daily lives. We have developed a range of digital card products
+                that seamlessly integrate with your digital presence, making it
+                easier than ever to share your contact details, social media
+                profiles, and website with others. Card Connect solutions are
+                customizable and come in a variety of designs, allowing you to
+                showcase your brand's identity and values. It is our mission to
+                help businesses and individuals succeed in the digital age.
+              </p>
+            </div>
+            <div className="qc-img">
+              <img src={qc2} alt="" />
             </div>
           </div>
         </div>

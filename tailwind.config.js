@@ -6,7 +6,7 @@ module.exports = withMT({
     container: {
       center: true,
       padding: "1rem",
-      maxWidth: "1280px",
+      maxWidth: "1250px",
     },
     extend: {
       colors: {
