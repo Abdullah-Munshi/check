@@ -924,6 +924,31 @@ textarea.custom-input {
 }
 /* contact css end */
 
+/* auth css start */
+.auth-container {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background: linear-gradient(
+    130deg,
+    hsla(0, 0%, 80%, 0.207),
+    rgba(40, 40, 40, 0)
+  );
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  margin: 15px auto;
+  max-width: 380px;
+  padding: 25px 20px;
+  position: relative;
+  width: 100%;
+}
+.auth-area-inner {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* auth css end */
+
 /* Media Query */
 @media screen and (max-width: 1023px) {
   .about-card-wrapper {
