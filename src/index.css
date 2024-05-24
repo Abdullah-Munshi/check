@@ -37,7 +37,7 @@ body {
     linear-gradient(294deg, #fff, #373737);
   background-position: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   content: "";
   height: 100%;
   position: absolute;
@@ -743,7 +743,203 @@ textarea.custom-input {
 }
 /* homepage css end */
 
+/* aboutus css start */
+.hero-area.type-2::after {
+  background-color: #000;
+  opacity: 0.2;
+}
+.about-card-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 450px;
+  grid-gap: 40px;
+}
+.dash-title {
+  color: #dbb24b;
+  font-size: 15px;
+  padding-left: 60px;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 5px;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.dash-title.both {
+  padding-right: 60px;
+}
+.dash-title::after,
+.dash-title.both::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #dbb24b;
+  left: 0;
+  bottom: 3px;
+}
+.dash-title.both::before {
+  left: auto;
+  right: 0;
+}
+.about-area {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about-area .whyus-content.plc-2 p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.about-area .whyus-content.plc-2 p:not(:last-child) {
+  margin-bottom: 24px;
+}
+.digi-wrapper .whyus-content.plc-2 {
+  margin-bottom: 55px;
+}
+.about-card-wrapper.type-2 {
+  grid-template-columns: 450px auto;
+}
+
+.about-card-wrapper.type-2 {
+  grid-template-columns: 450px auto;
+}
+.card-list li {
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-gap: 15px;
+}
+.card-list li p span {
+  color: #a5772b;
+  font-size: 17px;
+  font-weight: 500;
+}
+.about-card-wrapper.type-2 p {
+  color: #f6cd66;
+}
+.card-list li:not(:last-child) {
+  margin-bottom: 45px;
+}
+.card-list {
+  margin-top: 45px;
+}
+
+.info-content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-content h2 span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+.info-content p {
+  color: #fff;
+  font-size: 20px;
+}
+.info-area {
+  padding: 70px 0;
+  margin: 90px 0;
+}
+
+.card-list.type-2 li {
+  display: block;
+}
+.card-list.type-2 li p {
+  margin-top: 10px;
+  font-weight: normal;
+}
+/* aboutus css end */
+
+/* contact css start */
+
+.contact-area {
+  padding: 100px 0;
+}
+.contact-infos {
+  background-color: #222;
+  padding: 30px;
+  text-align: left;
+}
+.contact-infos h2 {
+  font-size: 27px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contact-infos p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+.contact-infos h6 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.contact-numbers li {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  grid-gap: 10px;
+  margin-top: 15px;
+}
+.contact-numbers {
+  margin-top: 35px;
+}
+
+.contact-form .input-inside {
+  margin-bottom: 34px;
+}
+.contact-form .input-inside input.custom-input {
+  height: 48px;
+}
+
+.info-content.type-2 h2 {
+  background: linear-gradient(
+    92deg,
+    #f5ac35 7.04%,
+    rgba(20, 117, 188, 0.99) 111.71%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.info-content.type-2 p {
+  color: #f6cd66;
+}
+.contact-g-wrapper {
+  margin-bottom: 145px;
+}
+.contact-area .whyus-content.plc-2 p {
+  font-weight: normal;
+  font-size: 17px;
+}
+/* contact css end */
+
 /* Media Query */
+@media screen and (max-width: 1023px) {
+  .about-card-wrapper {
+    display: block;
+  }
+  .info-content h2 span {
+    display: none;
+  }
+  .about-area .qc-img {
+    margin-bottom: 30px;
+  }
+  .info-area {
+    padding: 60px 0;
+    margin: 50px 0;
+  }
+}
 @media screen and (max-width: 959px) {
   .selectCard-page .lf {
     padding-right: 0;
@@ -753,8 +949,24 @@ textarea.custom-input {
     margin: 0 26px;
     justify-content: flex-start;
   }
+  .styles_row_your_card__LauG9 {
+    padding: 30px;
+  }
+  .styles_row_your_card__LauG9 h1 {
+    font-size: 30px;
+  }
+  .styles_row_your_card__LauG9 p {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
 }
 @media screen and (max-width: 719px) {
+  .contact-area {
+    padding: 60px 0;
+  }
+  .contact-g-wrapper {
+    margin-bottom: 75px;
+  }
   .primary-title {
     font-size: 34px;
   }
@@ -824,5 +1036,16 @@ textarea.custom-input {
     bottom: -24%;
     left: -38%;
     width: 68%;
+  }
+  .about-area {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .info-content h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .info-content p {
+    font-size: 17px;
   }
 }

@@ -1,8 +1,8 @@
-import Dashboard from "./pages/SelectCard";
+import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <Dashboard />
+      <Home />
     </>
   );
 }

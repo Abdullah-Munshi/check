@@ -6,16 +6,31 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@material-tailwind/react";
-import SelectCard from "./pages/SelectCard";
+import CreateCard from "./pages/CreateCard";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import Auth from "./pages/Auth";
 const router = createBrowserRouter([
+  {
+    path: "/auth",
+    element: <Auth />,
+  },
   {
     path: "/",
     element: <Home />,
   },
   {
+    path: "/aboutus",
+    element: <AboutUs />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
     path: "/create-card",
-    element: <SelectCard />,
+    element: <CreateCard />,
   },
 ]);
 

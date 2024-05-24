@@ -18,7 +18,7 @@ import CardThree from "../components/CardThree";
 import CardFour from "../components/CardFour";
 import CardFive from "../components/CardFive";
 
-const SelectCard = () => {
+const CreateCard = () => {
   const [flag, setFlag] = useState("IN");
   const handleFlag = (el) => {
     setFlag(el.target.value);
@@ -861,4 +861,4 @@ const SelectCard = () => {
   );
 };
 
-export default SelectCard;
+export default CreateCard;
