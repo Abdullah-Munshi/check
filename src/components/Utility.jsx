@@ -1,3 +1,4 @@
+import stripeIcon from "../assets/ft-sign.svg";
 export const DataSelected = () => {
   return (
     <div className="data-selected absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-full h-full">
@@ -23,4 +24,7 @@ export const DataSelected = () => {
       </div>
     </div>
   );
+};
+export const StripeIcon = () => {
+  return <img className="w-[238px]" src={stripeIcon} alt="icon" />;
 };

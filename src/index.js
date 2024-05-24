@@ -5,12 +5,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Dashboard from "./pages/SelectCard";
 import { ThemeProvider } from "@material-tailwind/react";
+import SelectCard from "./pages/SelectCard";
+import Home from "./pages/Home";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
+    element: <Home />,
+  },
+  {
+    path: "/create-card",
+    element: <SelectCard />,
   },
 ]);
 
