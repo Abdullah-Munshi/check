@@ -936,7 +936,7 @@ textarea.custom-input {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  margin: 15px auto;
+  margin: 15px;
   max-width: 380px;
   padding: 25px 20px;
   position: relative;
@@ -946,6 +946,44 @@ textarea.custom-input {
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.input-inside.auth .custom-input,
+.input-inside.auth select,
+.input-inside.auth .flag-dropdown {
+  border: 0.937701px solid #dcb249;
+  opacity: 0.45;
+  height: 48px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 6px;
+}
+.auth .flag-dropdown svg.group.absolute {
+  top: 12px;
+}
+.input-inside.auth {
+  margin-bottom: 20px;
+}
+.auth-form .box-btn {
+  background: linear-gradient(
+    92deg,
+    #d38800 5.78%,
+    #d48800 17.09%,
+    #feb42e 41.12%,
+    #fcb12b 57.14%,
+    #dd9411 77.87%,
+    #ffb52f 96.25%
+  );
+  border: 2px solid #fd5;
+  width: 100%;
+  border-radius: 6px;
+  height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Poppins;
+  letter-spacing: 0.4px;
+  font-size: 15px;
 }
 /* auth css end */
 
@@ -983,6 +1021,30 @@ textarea.custom-input {
   .styles_row_your_card__LauG9 p {
     font-size: 20px;
     margin-bottom: 26px;
+  }
+  .mobile-view-button {
+    align-items: center;
+    background: linear-gradient(
+      92deg,
+      #d38800 5.78%,
+      #d48800 17.09%,
+      #feb42e 41.12%,
+      #fcb12b 57.14%,
+      #dd9411 77.87%,
+      #ffb52f 96.25%
+    );
+    border: 2px solid #fd5;
+    border-radius: 25px;
+    box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.18);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: fixed;
+    right: 5px;
+    top: 70%;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 719px) {

@@ -2,7 +2,7 @@ import React from "react";
 
 const SignIn = () => {
   return (
-    <div className="w-full">
+    <form className="w-full auth-form">
       <div className="input-inside auth">
         <input
           type="text"
@@ -17,7 +17,14 @@ const SignIn = () => {
           className="custom-input"
         />
       </div>
-    </div>
+      <button className="box-btn w-full">Login</button>
+      <a
+        href="#"
+        className="text-[#a3a3a3] text-[13px] font-medium font-poppins transition duration-200 hover:text-[#69b1ff] mt-4 inline-block"
+      >
+        Forgot Password?
+      </a>
+    </form>
   );
 };
 
