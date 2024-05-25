@@ -54,7 +54,6 @@ const Header = () => {
           <div className="hidden lg:block">
             <Menu>
               <MenuButton>
-                {" "}
                 <Avatar src={avater} />
               </MenuButton>
               <Transition
@@ -67,15 +66,21 @@ const Header = () => {
               >
                 <MenuItems
                   anchor="bottom"
-                  className="w-52 origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white [--anchor-gap:var(--spacing-1)] focus:outline-none"
+                  className="w-40 origin-top-right rounded-xl border border-white/5 bg-[#333] !p-0 text-sm/6 text-white  focus:outline-none"
                 >
                   <MenuItem>
-                    <a href="#" className="block data-[focus]:bg-blue-100">
+                    <a
+                      href="#"
+                      className="block data-[focus]:bg-[#505050] px-4 py-2"
+                    >
                       Profile
                     </a>
                   </MenuItem>
                   <MenuItem>
-                    <a href="#" className="block data-[focus]:bg-blue-100">
+                    <a
+                      href="#"
+                      className="block data-[focus]:bg-[#505050] px-4 py-2"
+                    >
                       Logout
                     </a>
                   </MenuItem>
