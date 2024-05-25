@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Auth from "./pages/Auth";
+import MyCards from "./pages/MyCards";
 const router = createBrowserRouter([
   {
     path: "/auth",
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/create-card",
     element: <CreateCard />,
+  },
+  {
+    path: "/my-cards",
+    element: <MyCards />,
   },
 ]);
 

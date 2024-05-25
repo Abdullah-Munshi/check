@@ -987,6 +987,54 @@ textarea.custom-input {
 }
 /* auth css end */
 
+/* mycards css start */
+.poler-title h2 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    92deg,
+    #eac384 7.04%,
+    rgba(32, 129, 200, 0.99) 111.71%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-size: 40px;
+}
+.box-btn.gd-btn span {
+  background: linear-gradient(
+    92deg,
+    #d38800 5.78%,
+    #d48800 17.09%,
+    #feb42e 41.12%,
+    #fcb12b 57.14%,
+    #dd9411 77.87%,
+    #ffb52f 96.25%
+  );
+  border-radius: 10px;
+  box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.18);
+  color: #4d3000;
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.7rem 0.9rem;
+}
+.box-btn.gd-btn {
+  background: linear-gradient(92deg, #fd5, #fbd853, #b27c27, #fddb54, #b27c27);
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  padding: 2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mycard-area {
+  padding-top: 20px;
+}
+/* mycards css end */
+
 /* Media Query */
 @media screen and (max-width: 1023px) {
   .about-card-wrapper {
@@ -1076,6 +1124,9 @@ textarea.custom-input {
   }
 }
 @media screen and (max-width: 719px) {
+  .poler-title h2 {
+    font-size: 25px;
+  }
   .contact-area {
     padding: 60px 0;
   }
