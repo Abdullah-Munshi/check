@@ -4,7 +4,7 @@ import avaterImg from "../assets/upload.jpeg";
 import { EnvelopeIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 const CardThree = () => {
   return (
-    <div className="w-[280px] min-h-[400px] rounded-2xl overflow-hidden bg-white">
+    <div className="cdc w-[280px] min-h-[400px] rounded-2xl overflow-hidden bg-white">
       <div className="grid grid-cols-[auto_100px] items-center h-[115px] px-[18px] py-[18px] bg-white mb-5 pb-0">
         <div>
           <h5 className="text-[#404040] font-bold text-[15px] leading-tight mb-[1px]">

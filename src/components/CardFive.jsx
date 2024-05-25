@@ -4,7 +4,7 @@ import avaterImg from "../assets/upload.jpeg";
 import { EnvelopeIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 const CardFive = () => {
   return (
-    <div className="w-[280px] min-h-[400px] rounded-2xl overflow-hidden">
+    <div className="cdc w-[280px] min-h-[400px] rounded-2xl overflow-hidden">
       <div className="cover-photo relative h-[140px] w-full">
         <img
           className="w-full h-full object-cover object-top"

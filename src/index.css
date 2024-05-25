@@ -1046,6 +1046,34 @@ textarea.custom-input {
     z-index: 2;
     cursor: pointer;
   }
+  .mobile-panel-close {
+    background: linear-gradient(
+      92deg,
+      #d38800 5.78%,
+      #d48800 17.09%,
+      #feb42e 41.12%,
+      #fcb12b 57.14%,
+      #dd9411 77.87%,
+      #ffb52f 96.25%
+    );
+    border: 2px solid #fd5;
+    border-radius: 10px;
+    box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.18);
+  }
+  .card-mobile-view .cdc {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: auto;
+  }
+  .card-mobile-view .cdc p,
+  .card-mobile-view .cdc li a {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+  .card-mobile-view .cdc .h-\[230px\] {
+    height: 100px;
+  }
 }
 @media screen and (max-width: 719px) {
   .contact-area {
