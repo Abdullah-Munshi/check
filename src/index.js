@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Auth from "./pages/Auth";
 import MyCards from "./pages/MyCards";
+import Analytics from "./pages/Analytics";
 const router = createBrowserRouter([
   {
     path: "/auth",
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/my-cards",
     element: <MyCards />,
+  },
+  {
+    path: "/analytics",
+    element: <Analytics />,
   },
 ]);
 
