@@ -1034,6 +1034,48 @@ textarea.custom-input {
   padding-top: 20px;
 }
 /* mycards css end */
+/* analytics page css start */
+.card-views {
+  background: linear-gradient(
+    103deg,
+    #111 7.89%,
+    #000 30.16%,
+    #333 66.33%,
+    #222 66.34%,
+    #000 92.32%
+  );
+  border: 3px solid #ecc466;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 18px 15px 18px 22px;
+}
+.view-amount {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    111deg,
+    #f6cd66 15.26%,
+    #dfb858 52.78%,
+    #63440f 55.28%,
+    #4e3002 95.3%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 48px;
+  margin-bottom: 13px;
+  /* width: -moz-fit-content; */
+  width: fit-content;
+  line-height: 1;
+  font-weight: 300;
+}
+.page-title.type-10 {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.btn_group button.active {
+  background-color: rgb(243 202 100 / var(--tw-text-opacity));
+  color: #0b0b0b;
+}
+/* analytics page css end */
 
 /* Media Query */
 @media screen and (max-width: 1023px) {
@@ -1124,6 +1166,11 @@ textarea.custom-input {
   }
 }
 @media screen and (max-width: 719px) {
+  .page-title.type-10 {
+    font-weight: 700;
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
   .poler-title h2 {
     font-size: 25px;
   }
